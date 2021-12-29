@@ -3,6 +3,7 @@
 var elements = document.getElementById("main-form").elements;
 var submitButton = document.querySelector("#main-form-submit-button");
 var resetButton = document.querySelector("#reset-button");
+var returnToFormButton = document.getElementById("return-to-form-button");
 var productConfirmedLabel = document.getElementById("did-product-confirm-label");
 var productConfirmedDescription = document.getElementById("product-confirmed-description");
 var photoConfirmedLabel = document.getElementById("did-photo-confirm-label");
@@ -12,15 +13,25 @@ var batchConfirmedDescription = document.getElementById("batch-confirmed-descrip
 var retentionTestingLabel = document.getElementById("retention-confirmed-label");
 var retentionConfirmedDescription = document.getElementById("retention-confirmed-description");
 
-/********************************************************
- 								           FORM STRUCTURE
+/*************************************************************
+FORM STRUCTURE
+
 elements[0] = Product line
 elements[1] = Failure mode
 elements[2] = Product returned checkbox
 elements[3] = Did product return confirm problem checkbox
+elements[4] = Product confirmed problem description
+elements[5] = Photos returned checkbox
+elements[6] = Did photo return confirm problem checkbox
+elements[7] = Photo confirmed problem description
+elements[8] = Batch testing performed checkbox
+elements[9] = Did batch testing confirm problem checkbox
+elements[10] = Batch testing confirmed problem description
+elements[11] = Retention testing performed checkbox
+elements[12] = Did retention testing confirm problem checkbox
+elements[13] = Retention testing confirmed problem description
 
-
-********************************************************/
+*************************************************************/
 
 
 
@@ -52,6 +63,10 @@ function resetForm() {
 }
 
 resetForm();
+
+function toggleForm() {
+	document.getElementById("form-container").classList.toggle("form-container-class");
+}
 
 // Product returned checkbox
 elements[2].addEventListener("change", function() {
@@ -98,15 +113,7 @@ elements[12].addEventListener("change", function() {
 });
 
 
-submitButton.addEventListener("click", function() {
-	generateTemplate();
-}); 
-
 resetButton.addEventListener("click", function() {
 	resetForm();
 }); 
 
-function generateTemplate() {
-	var formInfo = document.getElementById("main-form").elements;
-	alert(formInfo);
-}

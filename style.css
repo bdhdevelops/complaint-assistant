@@ -1,24 +1,51 @@
 body {
 	font-family: Raleway;
+	background: #348ceb;
 }
 
 #main-container {
-	width: 1000px;
+	width: 800px;
+	height: 100%;
 	margin: auto;
+	padding-top: 30px;
+	padding-left: 30px;
+	background-color: #a0cbfa;
+}
+
+#header-container {
+	padding-top: 20px;
+	padding-left: 15px;
 }
 
 #form-container {
-	width: 1000px;
+	width: 800px;
 	margin: auto;
+	padding: 50px;
 	text-align: right;
+	display: block;
+}
+
+#template-container {
+	background: black;
 }
 
 #main-form {
 	margin: 10px;
 }
 
+.form-container-class {
+	display: none;
+}
+
 .subquestion {
 	display: none;
+}
+
+.button {
+	color: white;
+	background: blue;
+	padding: 5px;
+	border-radius: 5px;
 }
 
 #main-form-submit-button {
@@ -33,4 +60,27 @@ body {
 	background: blue;
 	padding: 5px;
 	border-radius: 5px;
+	margin-left: 20px;
+}
+
+#button-container {
+	align-content: center;
+}
+
+#return-to-form-button {
+	display: table;
+	margin: 0 auto;
+}
+
+#product-line {
+	margin-bottom: 20px;
+}
+
+#failure-mode {
+	margin-bottom: 20px;
+}
+
+.checkbox {
+	width: 18px;
+	height: 18px;
 }
