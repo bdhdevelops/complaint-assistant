@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+
+	<div id="main-container">
+		<div id="header-container">
+			<h1> Complaint Assistant</h1>
+			<h4> Blake.Hall@bd.com | (520) 343-4305 </h4>
+		</div>
+
+		<div id="form-container">
+			<h3> Complete the following form to generate a template. </h3>
+			<form id="main-form">
+				<label for="product-line">Select product line:</label><br>
+				<select name="product-line" id="product-line" style="width: 500px">
+					<option value="256082">256082 - Rapid Detection of SARS-CoV-2 Veritor</option>
+					<option value="256089">256089 - Rapid Detection of SARS-CoV-2 Veritor CE</option>
+					<option value="256041">256041 - BD Veritor System Flu A+B Laboratory Kit</option>
+					<option value="256045">256045 - BD Veritor System Flu A+B CLIA-waived Kit</option>
+					<option value="256052">256052 - BD Veritor System Flu A+B Kit (for Japan only)</option>
+					<option value="256066">256066 - BD Veritor Plus Analyzer Identified by Serial Numbers</option>
+					<option value="256040">256040 - BD Veritor System Group A Strep CLIA-waived Kit</option>
+					<option value="256060">256060 - Kit Veritor System Adeno 10 Test Japan</option>
+					<option value="256094">256094 - Veritor At Home</option>
+					<option value="256046">256046 - Kit Veritor System RSV 10 Test Japan</option>
+					<option value="256072">256072 - Kit Veritor Flu Hospital 30 Test Japan</option>
+				</select>
+				<br>
+				<label for="failure-mode">Select the failure mode:</label><br>
+				<select name="failure-mode" id="failure-mode" style="width: 500px">
+					<option value="flow-issues">Flow Issues</option>
+					<option value="expired-product">Expired Product</option>
+					<option value="missing-incorrect-components">Missing / Incorrect Components</option>
+					<option value="low-volume-empty-tube">Low Volume / Empty Tube</option>
+					<option value="false-positive">False Positive Result</option>
+					<option value="false-negative">False Negative Result</option>
+					<option value="invalid-result">Invalid Results</option>
+					<option value="contamination-foreign-matter">Contamintation / Foreign Matter</option>
+				</select>
+				<br>
+				<label id="was-product-returned-label">Product returned?</label>
+				<input type="checkbox" id="was-product-returned-checkbox">
+				<br>
+				<label id="did-product-confirm-label" class="subquestion">Did product investigation confirm the problem?</label>
+				<input type="checkbox" id="product-confirmed-checkbox" class="subquestion">
+				<br>
+				<input id="product-confirmed-description" style="width: 500px" type="text" class="subquestion text-box" value="">
+				<br>
+				<label id="were-photos-returned-label" for="were-photos-returned">Photographs returned?</label>
+				<input type="checkbox" id="were-photos-returned-checkbox">
+				<br>
+				<label id="did-photo-confirm-label" class="subquestion">Did photo investigation confirm the problem?</label>
+				<input type="checkbox" id="photo-confirmed-checkbox" class="subquestion">
+				<label class="subquestion"></label>
+				<br>
+				<input id="photo-confirmed-description" style="width: 500px" type="text" class="subquestion" value="">
+				<br>
+				<label id="was-batch=investigated-label" for="was-batch-investigated">Was batch testing performed?</label>
+				<input type="checkbox" id="was-batch-testing-performed">
+				<br>
+				<label id="batch-confirmed-label" for="was-batch-investigated" class="subquestion">Did batch testing confirm the problem?</label>
+				<input type="checkbox" id="was-batch-testing-performed" class="subquestion">
+				<br>
+				<input id="batch-confirmed-description" value="" style="width: 500px" class="subquestion" type="text" class="subquestion" value="null">
+				<br>
+				<label id="was-retention-investigated-label" for="was-retention-investigated">Was retention testing performed?</label>
+				<input type="checkbox" id="was-retention-testing-performed">
+				<br>
+				<label id="retention-confirmed-label" for="was-retention-investigated" class="subquestion">Did retention testing confirm the problem?</label>
+				<input type="checkbox" id="was-batch-testing-performed" class="subquestion">
+				<br>
+				<input id="retention-confirmed-description" value="" style="width: 500px" class="subquestion" type="text" class="subquestion" value="null">
+				<br>
+			</form>
+			<span id="main-form-submit-button">Generate Template</span>
+			<span id="reset-button">Clear Form</span>
+		</div>
+
+		<div id="template-container">
+
+		</div>
+	</div>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

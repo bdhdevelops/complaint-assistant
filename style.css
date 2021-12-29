@@ -1,0 +1,36 @@
+body {
+	font-family: Raleway;
+}
+
+#main-container {
+	width: 1000px;
+	margin: auto;
+}
+
+#form-container {
+	width: 1000px;
+	margin: auto;
+	text-align: right;
+}
+
+#main-form {
+	margin: 10px;
+}
+
+.subquestion {
+	display: none;
+}
+
+#main-form-submit-button {
+	color: white;
+	background: blue;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+#reset-button {
+	color: white;
+	background: blue;
+	padding: 5px;
+	border-radius: 5px;
+}
